@@ -1,0 +1,41 @@
+.sidebar {
+  width: 300px;
+  background-color: #202020;
+  height: 91.5vh;
+}
+.sidebar__btn {
+  display: flex;
+  padding: 8px 20px;
+  cursor: pointer;
+  align-items: center;
+}
+.sidebar__btn > .sidebar__icon {
+  opacity: 0.5;
+}
+.sidebar__btn > p {
+  opacity: 0.9;
+  font-weight: 400 !important;
+  font-size: 0.9rem;
+}
+.sidebar__btn--active > .sidebar__icon,
+.sidebar__btn--active > p {
+  opacity: 1 !important;
+}
+.sidebar__btn--active,
+.sidebar__btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebar__icon {
+  margin-right: 20px;
+}
+.sidebar__buttons {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #303030;
+}
+.bottom {
+  margin-top: 10px;
+}
+
+.sidebar__extraWidth {
+  width: 450px !important;
+}

@@ -1,0 +1,179 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #202020;
+  height: 8.5vh;
+}
+.header__left,
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 100px;
+}
+.header__menuicon {
+  padding: 20px;
+}
+.header__right > * {
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 25px !important;
+}
+.header__center {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+.header__input {
+  width: 50%;
+  height: 32px;
+  background-color: #121212;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  border: 1px solid #303030;
+  border-right: none;
+  font-size: 16px;
+}
+.header__btn {
+  height: 33.7px;
+  background-color: #313131 !important;
+  border-radius: 0 !important;
+}
+.header__searchIcon {
+  opacity: 0.2;
+  color: #fff;
+}
+
+.MuiPopover-paper {
+  max-height: calc(100vh - 62px - 100px);
+  width: 354px;
+  margin-top: 20px;
+  margin-right: -10px;
+  height: 390px;
+}
+
+.home__popoverContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.home__popover__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #dadce0;
+  width: 120%;
+  height: 190px;
+}
+
+.home__badge {
+  background: #fff;
+  color: #5f6368;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.home__camera {
+  width: 17px !important;
+  height: 17px !important;
+  margin: 4px;
+  box-shadow: 0px 1px 1px 0 rgba(65, 69, 73, 0.3),
+    0px 1px 3px 1px rgba(65, 69, 73, 0.15);
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+.home__camera:hover {
+  color: #6ba4f1;
+}
+
+.home__text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+  color: #202124;
+}
+
+.home__displayName {
+  font-family: "Poppins", sans-serif;
+  color: #202124;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  text-transform: capitalize;
+}
+
+.home__mail {
+  font-family: "Roboto", sans-serif;
+  color: #5f6368;
+}
+
+.home__btn {
+  background-color: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: 100px;
+  color: #3c4043;
+  margin: 16px 0 0;
+  max-width: 254px;
+  padding: 8px 16px;
+  font-family: "Poppins";
+  cursor: pointer;
+  user-select: none;
+}
+
+.home__btn:hover {
+  background-color: #f7f8f8;
+}
+
+.home__popover__btm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__addBtn {
+  display: flex;
+  align-items: center;
+  width: 354px;
+  border-bottom: 1px solid #dadce0;
+  color: #5f6368;
+  cursor: pointer;
+  font-family: "Poppins";
+  padding: 10px;
+}
+
+.home__addBtn:hover {
+  background-color: #f7f8f8;
+}
+
+.home__addIcon {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.home__signOut {
+  margin-top: 20px !important;
+  color: #5f6368 !important;
+  text-transform: capitalize !important;
+}
+
+.home__popover__footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 120%;
+  align-items: center;
+  color: #5f6368;
+  justify-content: center;
+  border-top: 1px solid #dadce0;
+  padding-top: 5px;
+}
+
+.home__popover__footer > span {
+  margin: 10px;
+}

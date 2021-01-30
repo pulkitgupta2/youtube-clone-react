@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 90vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+.videothumb__thumbnail {
+  width: inherit;
+  height: 137px;
+  margin-bottom: 10px;
+}
+.videothumb__details {
+  display: flex;
+}
+.videothumb {
+  margin: 20px;
+  margin-right: 0;
+  width: 230px;
+  height: 236px;
+  cursor: pointer;
+}
+.videothumb__title {
+  font-size: 0.9rem;
+  max-height: 42px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+.videothumb__channel {
+  margin-left: 10px;
+}
+.videothumb__texts {
+  margin-top: 5px;
+}
+.videothumb__text {
+  font-size: 14px;
+  color: #aaaaaa !important;
+}

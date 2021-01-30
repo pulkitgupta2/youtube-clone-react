@@ -1,0 +1,157 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #dadce0;
+  border-radius: 7px;
+  padding: 30px;
+  height: 520px;
+  width: 440px;
+  position: absolute;
+}
+
+.login__logo {
+  width: 100px;
+}
+
+.login__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 5px !important;
+}
+.login__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px !important;
+}
+
+.login__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__input {
+  margin-top: 20px !important;
+}
+
+.login__infoText {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  color: #5f6368;
+  font-size: 14px;
+}
+.login__infoText > a {
+  color: #1a73e8;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.login__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 0;
+}
+.login__button {
+  font-weight: 500 !important;
+  text-transform: capitalize !important;
+}
+
+.login__button:first-of-type {
+  padding-left: 0;
+}
+
+@media (max-width: 600px) {
+  .login__content {
+    border: none;
+    width: 85vw;
+    position: absolute;
+    top: 0;
+    margin: 0;
+  }
+}
+
+.login__loading {
+  animation: a-s 500ms 500ms 1 forwards;
+
+  background-color: #f1f1f1;
+  height: 4px;
+  width: 114%;
+  overflow: hidden;
+  margin-top: 10px;
+  margin: -30px -10px 30px -10px;
+  position: relative;
+  opacity: 0;
+}
+
+.login__loading::before {
+  animation: a-lb 20s 500ms linear forwards;
+
+  background-color: #3684eb;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transform: translateX(-300px);
+  width: 100%;
+}
+
+@keyframes a-s {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes a-lb {
+  0% {
+    transform: translateX(-300px);
+  }
+  5% {
+    transform: translateX(-240px);
+  }
+  15% {
+    transform: translateX(-30px);
+  }
+  25% {
+    transform: translateX(-30px);
+  }
+  30% {
+    transform: translateX(-20px);
+  }
+  45% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+  65% {
+    transform: translateX(-15px);
+  }
+  70% {
+    transform: translateX(-10px);
+  }
+  95% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+.login__fade {
+  opacity: 0.5;
+}
